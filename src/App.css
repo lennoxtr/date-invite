@@ -67,9 +67,10 @@ button.shrink {
 
 
 .picture {
-  max-width: 600px;
-  width: 90%;
-  height: auto;
+  max-height: 600px;
+  height: 90%;
+  width: auto;
+
   margin: 1.5rem auto 0.5rem;
   border-radius: 8px;
   cursor: pointer;
