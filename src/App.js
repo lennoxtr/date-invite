@@ -89,9 +89,9 @@ function App() {
         </button>
       </div>
       <img
-        src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
-        alt="Cute dancing cat"
-        className="dancing-cat"
+        src="https://media.tenor.com/BxibqUT9-I0AAAAM/dudu-flower.gif"
+        alt="Cute dancing bear"
+        className="dancing-bear"
       />
     </div>
   );

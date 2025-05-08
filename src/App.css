@@ -77,12 +77,12 @@ button.shrink {
 }
 
 
-.dancing-cat {
+.dancing-bear {
   position: absolute;
   top: 50%;
   right: 20px;
-  transform: translateY(-50%);
-  width: 120px;      /* adjust size as you like */
+  transform: translateY(-40%);
+  width: 140px;      /* adjust size as you like */
   pointer-events: none; /* so it never intercepts your button clicks */
 }
 
