@@ -81,9 +81,9 @@ button.shrink {
 .dancing-bear {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 40px;
   transform: translateY(-40%);
-  width: 140px;      /* adjust size as you like */
+  width: 200px;      /* adjust size as you like */
   pointer-events: none; /* so it never intercepts your button clicks */
 }
 
