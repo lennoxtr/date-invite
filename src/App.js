@@ -47,6 +47,11 @@ function App() {
           alt="Date idea"
           className="picture"
         />
+        <img
+        src="https://media.tenor.com/BxibqUT9-I0AAAAM/dudu-flower.gif"
+        alt="Cute dancing bear"
+        className="dancing-bear"
+      />
       </div>
     );
   }
@@ -88,11 +93,6 @@ function App() {
           Khum đi chơi với anh Khang âu 😢
         </button>
       </div>
-      <img
-        src="https://media.tenor.com/BxibqUT9-I0AAAAM/dudu-flower.gif"
-        alt="Cute dancing bear"
-        className="dancing-bear"
-      />
     </div>
   );
 }
