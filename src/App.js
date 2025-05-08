@@ -102,6 +102,13 @@ function App() {
           Khum đi chơi với anh Khang âu 😢
         </button>
       </div>
+      {!answeredYes && noCount > MAX_SHRINKS && (
+        <img
+          src={gifs[gifIndex]}
+          alt="Cute dancing bear"
+          className="dancing-bear"
+          />
+      )}
     </div>
   );
 }
