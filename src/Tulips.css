@@ -1,0 +1,18 @@
+.tulips {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    gap: 1.5rem;         /* increase spacing */
+    padding-bottom: 1rem;/* lift them up a bit */
+    z-index: 1;
+  }
+  
+  .tulip {
+    font-size: 5rem;     /* up from 2rem */
+    opacity: 0.9;        /* a bit more solid */
+    transform: translateY(30%); /* tuck them slightly under the fold */
+  }
+  

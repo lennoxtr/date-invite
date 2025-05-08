@@ -1,38 +1,78 @@
+/* src/App.css */
 .App {
+  position: relative;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: stretch;       
+  background: #fff0f5;        
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  /* the inline style transition will take effect */
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.yes {
+  background: #4caf50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.no {
+  background: #f44336;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 2rem;
 }
+
+/* smooth scaling */
+button {
+  transition: transform 0.2s ease;
+}
+
+/* when she clicks “No” */
+button.grow {
+  transform: scale(1.2);
+}
+button.shrink {
+  transform: scale(0.8);
+}
+
+
+.picture {
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  margin: 1.5rem auto 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
