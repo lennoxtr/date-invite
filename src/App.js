@@ -10,7 +10,7 @@ function App() {
   const [noCount, setNoCount] = useState(0);
   const [noPos, setNoPos]     = useState({ top: '50%', left: '60%' });
   const [answeredYes, setAnsweredYes] = useState(false);
-  const [question, setQuestion] = useState('Helu cậu. Thứ 7 này tớ rủ cậu đi chơi nhé');
+  const [question, setQuestion] = useState('Helu Mai. Thứ 7 này tớ rủ cậu đi chơi nhé');
 
   const images = [
     'https://lightsbythelake.nparks.gov.sg/images/Activities/Movie_Night.jpg',
@@ -42,6 +42,11 @@ function App() {
       <div className="App">
         <Bubbles />
         <h2> Yayy. Thứ 7 này ngắm hoa với anh nhéee </h2>
+        <img
+          src={images[1]}
+          alt="Date idea"
+          className="picture"
+        />
       </div>
     );
   }
@@ -56,7 +61,7 @@ function App() {
       <h1>{question}</h1>
 
       <img
-        src={images[imgIndex]}
+        src={images[0]}
         alt="Date idea"
         className="picture"
       />
