@@ -10,7 +10,7 @@ function App() {
   const [noCount, setNoCount] = useState(0);
   const [noPos, setNoPos]     = useState({ top: '50%', left: '60%' });
   const [answeredYes, setAnsweredYes] = useState(false);
-  const [question, setQuestion] = useState('Hélu em Mai. Thứ 7 này đi chơi với anh đi!');
+  const [question, setQuestion] = useState('Hélu em Mai 🌼. Thứ 7 này đi chơi với anh đi!');
 
   const images = [
     `${process.env.PUBLIC_URL}/images/khang1.jpg`,
