@@ -68,7 +68,7 @@ function App() {
       <h1>{question}</h1>
 
       <img
-        src={images[0]}
+        src={images[imgIndex]}
         alt="Date idea"
         className="picture"
       />
