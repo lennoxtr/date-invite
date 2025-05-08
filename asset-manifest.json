@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/date-invite/static/css/main.147a12ec.css",
+    "main.css": "/date-invite/static/css/main.fefef151.css",
     "main.js": "/date-invite/static/js/main.f881c3ac.js",
     "static/js/453.2b7f9495.chunk.js": "/date-invite/static/js/453.2b7f9495.chunk.js",
     "index.html": "/date-invite/index.html",
-    "main.147a12ec.css.map": "/date-invite/static/css/main.147a12ec.css.map",
+    "main.fefef151.css.map": "/date-invite/static/css/main.fefef151.css.map",
     "main.f881c3ac.js.map": "/date-invite/static/js/main.f881c3ac.js.map",
     "453.2b7f9495.chunk.js.map": "/date-invite/static/js/453.2b7f9495.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.147a12ec.css",
+    "static/css/main.fefef151.css",
     "static/js/main.f881c3ac.js"
   ]
 }
