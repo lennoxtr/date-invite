@@ -13,24 +13,31 @@ function App() {
   const [question, setQuestion] = useState('Hélu em Mai. Thứ 7 này đi chơi với anh đi!');
 
   const images = [
-    'https://lightsbythelake.nparks.gov.sg/images/Activities/Movie_Night.jpg',
-    'https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/tulipmania-2025/_jcr_content/root/container/container_copy/container_572231966/image_81910045_copy.coreimg.jpeg/1742975513645/2025-tulipmania-website-kv-1920x1080.jpeg',
-    'https://drive.google.com/file/d/1AScGLWGZ3piQvbuAktxxwQx7IQoUysba/view?usp=sharing'
+    `${process.env.PUBLIC_URL}/images/khang1.jpg`,
+    `${process.env.PUBLIC_URL}/images/khang2.jpg`,
+    `${process.env.PUBLIC_URL}/images/tulipmania.jpg`
   ];
+
+  const gifs = [
+    `${process.env.PUBLIC_URL}/images/dudu-bear.gif`,
+    `${process.env.PUBLIC_URL}/images/dudu-bear2.gif`
+  ];
+
   const [imgIndex, setImgIndex] = useState(0);
+  const [gifIndex, setGifIndex] = useState(0);
 
-  const nextImage = () =>
-    setImgIndex(i => (i + 1) % images.length);
-
-  const handleYes = () => setAnsweredYes(true);
+  const handleYes = () => {
+    setGifIndex(0);
+    setAnsweredYes(true);
+  }
 
   const handleNo = () => {
-  
+    setImgIndex(1);
     if (noCount < MAX_SHRINKS) {
       setNoCount(c => c + 1);
       setQuestion("Eo ơi em ấn khum thật à :(((");
-      setImgIndex(2);
     } else {
+      setGifIndex(1);
       setQuestion("Lêu lêuuu giỏi thì ấn típ đi");
       const top  = 10 + Math.random() * 80; 
       const left = 10 + Math.random() * 80;
@@ -45,12 +52,12 @@ function App() {
         <Bubbles />
         <h2> Yayy. Thứ 7 này ngắm hoa với anh nhé. Đẹp lắm đóo </h2>
         <img
-          src={images[1]}
+          src={images[2]}
           alt="Date idea"
           className="picture"
         />
         <img
-        src="https://media.tenor.com/BxibqUT9-I0AAAAM/dudu-flower.gif"
+        src={gifs[gifIndex]}
         alt="Cute dancing bear"
         className="dancing-bear"
       />
