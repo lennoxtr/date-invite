@@ -10,11 +10,12 @@ function App() {
   const [noCount, setNoCount] = useState(0);
   const [noPos, setNoPos]     = useState({ top: '50%', left: '60%' });
   const [answeredYes, setAnsweredYes] = useState(false);
-  const [question, setQuestion] = useState('Helu Mai. Thứ 7 này tớ rủ cậu đi chơi nhé');
+  const [question, setQuestion] = useState('Hélu em Mai. Thứ 7 này đi chơi với anh đi!');
 
   const images = [
     'https://lightsbythelake.nparks.gov.sg/images/Activities/Movie_Night.jpg',
     'https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/tulipmania-2025/_jcr_content/root/container/container_copy/container_572231966/image_81910045_copy.coreimg.jpeg/1742975513645/2025-tulipmania-website-kv-1920x1080.jpeg',
+    'https://drive.google.com/file/d/1AScGLWGZ3piQvbuAktxxwQx7IQoUysba/view?usp=sharing'
   ];
   const [imgIndex, setImgIndex] = useState(0);
 
@@ -27,7 +28,8 @@ function App() {
   
     if (noCount < MAX_SHRINKS) {
       setNoCount(c => c + 1);
-      setQuestion("Từ chối anh khum dễ vậy âu");
+      setQuestion("Eo ơi em ấn khum thật à :(((");
+      setImgIndex(2);
     } else {
       setQuestion("Lêu lêuuu giỏi thì ấn típ đi");
       const top  = 10 + Math.random() * 80; 
