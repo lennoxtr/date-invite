@@ -41,7 +41,7 @@ function App() {
     return (
       <div className="App">
         <Bubbles />
-        <h2> Yayy. Thứ 7 này ngắm hoa với anh nhéee </h2>
+        <h2> Yayy. Thứ 7 này ngắm hoa với anh nhé. Đẹp lắm đóo </h2>
         <img
           src={images[1]}
           alt="Date idea"
@@ -88,6 +88,11 @@ function App() {
           Khum đi chơi với anh Khang âu 😢
         </button>
       </div>
+      <img
+        src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+        alt="Cute dancing cat"
+        className="dancing-cat"
+      />
     </div>
   );
 }

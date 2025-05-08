@@ -76,3 +76,13 @@ button.shrink {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+
+.dancing-cat {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 120px;      /* adjust size as you like */
+  pointer-events: none; /* so it never intercepts your button clicks */
+}
+
