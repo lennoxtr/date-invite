@@ -102,9 +102,9 @@ function App() {
           Khum đi chơi với anh Khang âu 😢
         </button>
       </div>
-      {!answeredYes && noCount > 1 && (
+      {noCount > 1 && (
         <img
-          src={gifs[gifIndex]}
+          src={gifs[1]}
           alt="Cute dancing bear"
           className="dancing-bear"
           />
